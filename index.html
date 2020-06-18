@@ -3,14 +3,67 @@
 <head>
   <title> <3 <3 <3 </title>
   <meta charset="utf-8">
+  <style>
+  body {
+    margin:0px;
+  }
+  h1 {
+      font-size:50px;
+      text-align: right;
+      border-bottom:1px solid black;
+      margin:0px;
+      padding:37px;
+    }
+    ol {
+      border-right:none;
+      width:130px;
+      margin:0px;
+      padding:30px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left: 33px;
+      padding-top: 30px;
+    }
+    #list a {
+      color:black;
+    }
+    @media(max-width:620px){
+      #grid {
+        display: block;
+      }
+      ol {
+        border-right:none;
+      }
+      h1 {
+          text-align: center;
+          border-bottom:none;
+        }
+      h2 {
+          text-align: right;
+        }
+        #grid ol {
+          padding-left: 50px;
+          padding-bottom: 10px;
+          padding-top: none;
+        }
+    }
+  </style>
 </head>
 
 <body>
+<div id="list">
   <h1><i><a href="index.html">Forever...</a></i></h1>
-  <ol>
-    <li><a href="1.html">ami 친구</a></li>
-    <li><a href="2.html">amoureaux 연인</a></li>
-    <li><a href="3.html">famille 가족</a></li>
-  </ol>
-  <h2>.......and <a href="https://emojipedia.org/pile-of-poo/" title="ça pu!" target="_blank"><strong><u>ever</u></strong></a></h2>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">ami 친구</a></li>
+      <li><a href="2.html">amoureaux 연인</a></li>
+      <li><a href="3.html">famille 가족</a></li>
+    </ol>
+  </div>
+</div>
+    <h2>.......and <a href="https://emojipedia.org/pile-of-poo/" title="ça pu!" target="_blank"><strong><u>ever</u></strong></a></h2>
 </body>

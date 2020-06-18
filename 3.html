@@ -3,25 +3,83 @@
 <head>
   <title> <3 <3 <3 </title>
   <meta charset="utf-8">
+  <style>
+  body {
+    margin:0px;
+  }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+  h1 {
+      font-size:50px;
+      text-align: right;
+      border-bottom:1px solid black;
+      margin:0px;
+      padding:37px;
+    }
+    ol {
+      border-right:1px solid black;
+      width:130px;
+      margin:0px;
+      padding:30px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left: 33px;
+      padding-top: 30px;
+    }
+    #content {
+      padding-left: 75px;
+      padding-top: 3px;
+    }
+    @media(max-width:522px){
+      #grid {
+        display: block;
+      }
+      ol {
+        border-right:none;
+      }
+      h1 {
+          text-align: center;
+          border-bottom:none;
+        }
+        #content {
+          padding-left: 30px;
+        }
+        #grid ol {
+          padding-left: 50px;
+          padding-bottom: 10px;
+          padding-top: none;
+        }
+    }
+  </style>
 </head>
 
 <body>
   <h1><i><a href="index.html">Forever...</a></i></h1>
-  <ol>
-    <li><a href="1.html">ami 친구</a></li>
-    <li><a href="2.html">amoureaux 연인</a></li>
-    <li><a href="3.html">famille 가족</a></li>
-  </ol>
-  <h2>Qu’est-ce qu’une famille?:</h2>
-  <p><strong>Biologie</strong>
-  <br>Division systématique de l'ordre ou du sous-ordre, dans laquelle on rassemble les genres animaux ou végétaux ayant de nombreux caractères communs. (Les noms scientifiques internationaux des familles sont latins, leur désinence française est-idés [masculin pluriel] en zoologie,-acées [féminin pluriel] en botanique. Leur désinence reste libre lorsque le nom de la famille ne dérive pas de celui d'un genre : graminées, ombellifères.)</p>
-  <p><strong>Céramique</strong><br>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">ami 친구</a></li>
+      <li><a href="2.html">amoureaux 연인</a></li>
+      <li><a href="3.html" style="color:rgb(153,051,000);text-decoration:underline">famille 가족</a></li>
+    </ol>
+  <div id="content">
+    <h2>Qu’est-ce qu’une famille?:</h2>
+    <p><strong>Biologie</strong>
+    <br>Division systématique de l'ordre ou du sous-ordre, dans laquelle on rassemble les genres animaux ou végétaux ayant de nombreux caractères communs. (Les noms scientifiques internationaux des familles sont latins, leur désinence française est-idés [masculin pluriel] en zoologie,-acées [féminin pluriel] en botanique. Leur désinence reste libre lorsque le nom de la famille ne dérive pas de celui d'un genre : graminées, ombellifères.)</p>
+    <p><strong>Céramique</strong><br>
   Groupe de porcelaines d'Extrême-Orient apparentées par la couleur dominante de leur décor. (Les familles les plus connues sont : la famille verte, à son apogée sous le règne de Kangxi[1662-1722], et la famille rose, qui, apparue durant le même règne, s'est développée tout au long du xviiie s. et dont la fabrication s'est poursuivie jusqu'à nos jours.)</p>
-  <p><strong>Mathématiques</strong><br>
+    <p><strong>Mathématiques</strong><br>
   Ensemble dont tous les éléments sont des parties d'un ensemble donné.</p>
-  <p><strong>Religion</strong><br>
+    <p><strong>Religion</strong><br>
   Ensemble des religieux d'un même ordre.</p>
-  <p><strong>Sociologie</strong><br>
+    <p><strong>Sociologie</strong><br>
   Ensemble de maffiosi groupés sous l'autorité d'un parrain.</p>
-  <a href="https://youtu.be/9yANQGdcdjA" target="_blank"><img src="barbapapafamille.jpg" width="50%" title="câlin famille!" ></a>
+    <a href="https://youtu.be/9yANQGdcdjA" target="_blank"><img src="barbapapafamille.jpg" width="50%" title="câlin famille!" ></a>
+  </div>
+</div>
 </body>
